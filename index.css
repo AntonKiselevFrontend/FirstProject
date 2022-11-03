@@ -1,0 +1,404 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --width-block: 100%
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    max-width: 1110px;
+    padding: 0 55px;
+    margin: 0 auto;
+}
+.container-team{
+    display: flex;
+    flex-direction: column;
+    
+    max-width: 1110px;
+    padding: 0 55px;
+    margin: 0 auto;
+}
+/* Header*/
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 84px;
+    background-color: #007765;
+    
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    width: 1110px;
+}
+.nav__logo img{
+    padding-top: 20px;
+}
+.nav__list{
+    display: flex;
+    column-gap: 8px;
+    align-items: center;
+    margin: 0;
+    padding: 28px 0;
+    
+    list-style-type: none;
+    list-style-position: outside;
+}
+.nav__link{
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #fff;
+    text-decoration: none;
+}
+.nav__text{
+    font-weight: 500;
+    font-size: 24px;
+    color: #fff;
+}
+.nav__link:hover{
+    color: #fff;
+}
+.nav-mobile{
+    display: none;
+}
+/*Poster*/
+.poster{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 403px;
+    margin-top: 84px;
+
+    background-image: url(./img/image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+}
+.poster__title{
+    display: block;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 84px;
+    
+    margin: 0 auto;
+    color: #FFFFFF;
+}
+/* HEADERS*/
+.problem__title,
+.introduction__header,
+.team__title {
+    padding: 48px 0 16px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    color: #007765;
+}
+.team__title {
+    padding: 48px 0 32px;
+}
+/*article The Problem*/
+.problem{
+    width: 100%;
+    min-height: 719px;
+    background-color: #EEEEEE;
+}
+.problem__content{
+    min-height: 488px;
+}
+.problem__text,
+.problem__text-last,
+.introduction__text-flex,
+.introduction__text{
+    margin: 0;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #000000;
+}
+.problem__text {
+    padding-bottom: 36px;
+}
+/*Slogan*/
+.slogan{
+    margin-top: 0;
+    height: 483px;
+
+    background-image: url(./img/slogan.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.slogan__content{
+    display: flex;
+    align-items: center;
+    width: 893px;
+    height: 228px;
+    margin: 0 auto;
+    padding-top: 128px;
+}
+.slogan__text{
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+
+    color: #FFFFFF;
+}
+/*introduction*/
+.introduction{
+    width: 100%;
+    min-height: 604px;
+    background-color: #FFFFFF;
+}
+/*
+.introduction__header{
+    padding: 48px 0 16px;
+    margin: 0;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    color: #007765;
+}*/
+.introduction__content-flex{
+    display: flex;
+    column-gap: 48px;
+    align-items: center;
+    min-height: 110px;
+}
+.introduction__logo{
+    width: 115px;
+    height: 115px;
+}
+
+.introduction__text-flex-italic{
+    font-style: italic;
+}
+.introduction__content-text{
+    padding-top: 40px;
+    margin: 0;
+}
+.introduction__text-high{
+    padding-bottom: 33px;
+}
+/* Team */
+.team{
+    width: 100%;
+    min-height: 845px;
+    background-color: #EEEEEE;
+}
+/*
+.team__title{
+    margin: 0;
+    padding: 48px 0 32px;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+    color:#007765;
+}*/
+.team__squad{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    row-gap: 30px;
+    /*
+    column-gap: 30px;
+    row-gap: 30px;
+    */
+}
+.team__person{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 278px; /* 350px */
+    height: 283px;
+    margin: 0;
+}
+.team__person-face{
+    width: 168px;
+    height: 168px;
+    /*padding: 24px 91px 12px;*/
+}
+.team__person-name{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #007765;
+}
+.team__person-job{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+}
+/* Footer */
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 176px;
+    background-color: #333333;
+}
+.footer__content{
+    width: 540px;
+    margin: 0 auto;
+    /*padding: 48px 285px 64px;*/
+}
+.footer__text{
+    margin: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+/* Breakpoints:
+1. 950px
+*/
+/* media */
+@media (max-width: 943px) {
+    .team__person {
+        width: 209px;
+        /* 737px */
+    }
+}
+@media (max-width: 790px) {
+    .container {
+        padding: 0 35px;
+    }
+}
+@media (max-width: 737px) {
+    .team__squad {
+        justify-content: space-around;
+        row-gap: 0;
+    }
+    .nav__list{
+        display: none;
+    }
+    .nav-mobile{
+        display: block;
+        width: 100%;
+        height: 170px;
+        margin-top: 84px;
+
+        background-color: #007765;
+    }
+    .nav__list-mobile{
+        display: flex;
+        flex-direction: column;
+        
+        align-items: flex-start;
+        justify-content: space-around;
+        margin: 0;
+        padding: 0;
+        
+        height: 150px;
+        list-style-type: none;
+        list-style-position: outside;
+    }
+    .poster{
+        margin-top: 0;
+    }
+}
+@media (max-width: 610px) {
+    .container-team{
+        padding: 0 35px;
+    }
+    .problem__title,
+    .introduction__header,
+    .team__title {
+        font-size: 55px;
+        line-height: 55px;
+    }
+    .poster__title{
+        font-size: 50px;
+        line-height: 55px;
+    }
+    .problem__text,
+    .problem__text-last,
+    .introduction__text-flex,
+    .introduction__text {
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .slogan__text{
+        font-size: 43px;
+        line-height: 50px;
+    }
+    .nav-mobile,
+    .poster,
+    .slogan,
+    .problem,
+    .introduction,
+    .team,
+    .footer {
+        width: 115%;
+    }
+}
+@media (max-width: 529px) {
+    .nav-mobile,
+    .poster,
+    .slogan,
+    .problem,
+    .introduction,
+    .team,
+    .footer {
+        width: 126%;
+    }
+}
+@media (max-width: 482px) {
+    .nav-mobile,
+    .poster,
+    .slogan,
+    .problem,
+    .introduction,
+    .team,
+    .footer {
+        width: 150%;
+    }
+}
+@media (max-width: 406px) {
+    .nav-mobile,
+    .poster,
+    .slogan,
+    .problem,
+    .introduction,
+    .team,
+    .footer {
+        width: 175%;
+    }
+}
+@media (max-width: 350px) {
+    .nav-mobile,
+    .poster,
+    .slogan,
+    .problem,
+    .introduction,
+    .team,
+    .footer {
+        width: 220%;
+    }
+}
