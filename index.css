@@ -80,7 +80,7 @@ body {
     height: 403px;
     margin-top: 84px;
 
-    background-image: url(./img/image.png);
+    background-image: url(./img/image.PNG);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
@@ -137,7 +137,7 @@ body {
     margin-top: 0;
     height: 483px;
 
-    background-image: url(./img/slogan.png);
+    background-image: url(./img/slogan.PNG);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
